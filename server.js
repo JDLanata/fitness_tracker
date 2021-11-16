@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/custommethoddb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 
 
@@ -60,7 +60,18 @@ app.post("/api/workouts", (req, res) => {
 });
 
 
+app.get("/api/workouts/range", (req, res) =>{
+    db.Workout.find({})
+    .populate("exercises")
+    .then(dbWork => {
+        res.json(dbWork);
+    })
+    .catch(err => {
+        res.json(err);
+    });
 
+
+})
 
 
 
