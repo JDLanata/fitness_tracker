@@ -53,7 +53,8 @@ no tests
 ---
 
 ## Screenshots 
-[fitness_page_one](https://user-images.githubusercontent.com/87950670/142092065-e28e9455-97b8-496b-ab91-300164e9f584.png)
+![fitness_page_one](https://user-images.githubusercontent.com/87950670/142092065-e28e9455-97b8-496b-ab91-300164e9f584.png)
+
 ![fitness_page_two](https://user-images.githubusercontent.com/87950670/142092066-e9aedc56-11b0-4f0b-a1db-6a1386aaf2aa.png)
 
 --
